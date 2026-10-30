@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            background-color: #f4f6fa;
+        }
+
+        h1 {
+            text-align: center;
+            color: #142d4e;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        figure {
+            margin: 0;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        figure img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 650px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Photo Gallery</h1>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="green forest landscape.png"
+                 alt="Green forest landscape">
+            <figcaption>Nature</figcaption>
+        </figure>
+
+        <figure>
+            <img src="photography equipment.png"
+                 alt="Photography equipment">
+            <figcaption>Photography</figcaption>
+        </figure>
+
+        <figure>
+            <img src="mountain landscape.png"
+                 alt="Mountain landscape">
+            <figcaption>Adventure</figcaption>
+        </figure>
+
+        <figure>
+            <img src="beautiful outdoor landscape.png"
+                 alt="Beautiful outdoor scenery">
+            <figcaption>Scenery</figcaption>
+        </figure>
+
+        <figure>
+            <img src="natural landscape.png"
+                 alt="Natural landscape">
+            <figcaption>Exploration</figcaption>
+        </figure>
+
+        <figure>
+            <img src="model.png"
+                 alt="Outdoor photography">
+            <figcaption>Memories</figcaption>
+        </figure>
+
+    </div>
+
+</body>
+</html>
